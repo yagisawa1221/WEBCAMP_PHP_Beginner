@@ -1,5 +1,5 @@
 <?php
-// 
+//
 $array_1=[
     0 => '1st',
     1 => '2nd',
@@ -7,7 +7,7 @@ $array_1=[
 ];
 var_dump($array_1);
 
-// 
+//
 $array_2 =[
     2 => '3rd',
     0=> '1st',
@@ -16,7 +16,7 @@ $array_2 =[
 ];
 var_dump($array_2);
 
-// 
+//
 $array_3 =[
     "key1" => "Hello",
     2=> '3rd',
