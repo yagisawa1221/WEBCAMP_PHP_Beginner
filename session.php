@@ -1,26 +1,26 @@
 <?php
-// 
-ob_start();
-// 
+//
+ob_start()
+//
 session_start();
 
-// 
-function h(string $s):string
+//
+function h(string $s) : string
 {
-    return htmlspecialchars($s, ENT_QUOTES);
+    return htmlspecialchars($s , ENT_QUOTES);
 }
 
-// 
-$counter = $_SESSION['counter'] ?? 1;
+//
+$counter =$_SESSION['counter'] ??1;
 
-// 
-echo "ｯセッション）あなたがこのサイトを訪れたのは" , h(strval($counter)),"回目ですね。";
+//
+echo "セッション）あなたがこのサイトを訪れたのは",h(strval($counter)),"回目ですね。";
 
-// 
+//
 $next_counter = $counter +1;
 
-// 
+//
 $_SESSION['counter'] = $next_counter;
 
-// 
+//
 ob_end_flush();
