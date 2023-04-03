@@ -9,7 +9,13 @@ function h(string $s) : string
 }
 
 // 
-$input = $_GET['input_text'] ?? "";
+function h(string $s) : string
+{
+    return htmlspecialchars($s , ENT_QUOTES);
+}
+
+// データの取得
+$input = $_GET['input_text'] ?? ""; // 今回追記分
 
 // 
 echo "あなたが入力したのは" , h($input) , "ですね";
