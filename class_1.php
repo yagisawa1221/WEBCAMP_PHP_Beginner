@@ -14,7 +14,7 @@ class クラス名
     // アクセサ
     public function set変数($v)
     {
-        $this->変数 = $v;
+        $this ->変数 = $v;
     }
     // 
     public function get変数()
@@ -26,9 +26,8 @@ class クラス名
 // 
 $obj = new クラス名();
 var_dump($obj);
-$obj->関数(); //メソッドを呼び出す
-// echo $obj->変数 ,"\n"; //変数を読む➡エラーになる
+$obj->関数();
 
 // 
 $obj->set変数('data');
-echo $obj->get変数(),"\n";
+echo $obj->get変数() , "\n";
