@@ -3,7 +3,7 @@
 $write_data = [
     [1,2,3],
     ["aaa","bbb","ccc"],
-    [",aa","b \"b", "c \n c"],
+    [",aa","b \" b", "c \n c"],
 ];
 
 $file_name = __DIR__. "/data.csv";
